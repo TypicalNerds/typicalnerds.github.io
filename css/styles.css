@@ -1,7 +1,7 @@
 :root {
   --GradientA: linear-gradient(to top, black, #232323);
   --BrightText: #ffffff;
-  --StandardText: #cccccc;
+  --StandardText: #EEEEEE;
   --HyperText: #00a6ff;
   --HoverColor: #000000;
   --SectionABackground: #333333;
@@ -10,7 +10,22 @@
 
   --DefaultFontFamily: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
+  --fontSizeH1: 3rem;
+  --fontSizeH2: 2rem;
+  --fontSizeH3: 1rem;
 
+  --fontSizeP: large;
+
+}
+
+@media only screen and (max-width: 400px) {
+  :root {
+    --fontSizeH1: 2rem;
+    --fontSizeH2: 1rem;
+    --fontSizeH3: 1;
+    --fontSizeP: medium;
+  }
+  
 }
 
 html, body {
@@ -32,17 +47,17 @@ html, body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: var(--fontSizeH1);
     font-weight: bolder;
     color: var(--BrightText);
 }
 h2 {
-  font-size: 2rem;
+  font-size: var(--fontSizeH2);
   font-weight: bold;
   color: var(--BrightText);
 }
 h3 {
-  font-size: 1rem;
+  font-size: var(--fontSizeH3);
   color: var(--BrightText);
 }
 
@@ -51,11 +66,30 @@ a {
 }
 
 p {
-  font-size: large;
+  font-size: var(--fontSizeP);
   font-weight: normal;
   color: var(--StandardText);
+  background-color: #00000055;
+  border-radius: 10px;
+  max-width: 65%;
+  margin: auto;
 }
 
+.about h2 {
+  background-color: #00000055;
+  border-radius: 10px;
+  max-width: 65%;
+  margin: auto;
+  margin-bottom: 1%;
+}
+
+.logo {
+  max-width: 1280px;
+  min-width: 50px;
+  min-height: 6vh;
+  max-height: 6vh;
+  aspect-ratio: 1;
+}
 
 header {
   width: 100%;
