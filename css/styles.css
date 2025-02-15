@@ -89,7 +89,6 @@ p {
   min-width: 50px;
   min-height: 6vh;
   max-height: 6vh;
-  aspect-ratio: 1;
 }
 
 header {
