@@ -18,19 +18,6 @@
 
 }
 
-@media only screen and (max-width: 400px) {
-  :root {
-    --fontSizeH1: 2.5rem;
-    --fontSizeH2: 1.5rem;
-    --fontSizeH3: 1.5;
-    --fontSizeP: medium;
-  }
-  
-  .platform-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 html, body {
   background-image: var(--GradientA);
   background-repeat: no-repeat;
@@ -242,7 +229,7 @@ ul {
   margin: 0 auto;
 
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-evenly;
   gap: 0px;
  
@@ -270,5 +257,16 @@ ul {
   background-image: url("../assets/images/platforms/YouTube.png");
 }
 
-
-
+@media only screen and (max-width: 400px) {
+  :root {
+    --fontSizeH1: 2.5rem;
+    --fontSizeH2: 1.5rem;
+    --fontSizeH3: 1.5;
+    --fontSizeP: medium;
+  }
+  
+  .platform-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
