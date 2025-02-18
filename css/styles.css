@@ -12,7 +12,8 @@
 
   --fontSizeH1: 3rem;
   --fontSizeH2: 2rem;
-  --fontSizeH3: 1rem;
+  --fontSizeH3: 1.5rem;
+  --fontSizeH4: 1rem;
 
   --fontSizeP: large;
 
@@ -41,19 +42,29 @@ h1 {
     font-size: var(--fontSizeH1);
     font-weight: bolder;
     color: var(--BrightText);
+    margin: auto;
 }
 h2 {
   font-size: var(--fontSizeH2);
   font-weight: bold;
   color: var(--BrightText);
+  margin: auto;
 }
 h3 {
   font-size: var(--fontSizeH3);
   color: var(--BrightText);
+  margin: auto;
+}
+h4 {
+  font-size: var(--fontSizeH4);
+  color: var(--BrightText);
+  margin: auto;
 }
 
 a {
   font-weight: bolder;
+  text-decoration: none;
+  color: var(--BrightText);
 }
 a:link { 
   text-decoration: none; 
@@ -79,19 +90,12 @@ p {
   margin: auto;
 }
 
-.about h2 {
-  background-color: #00000055;
-  border-radius: 10px;
-  max-width: 65%;
-  margin: auto;
-  margin-bottom: 1%;
-}
-
 .logo {
   max-width: 1280px;
   min-width: 50px;
   min-height: 6vh;
   max-height: 6vh;
+  margin: auto;
 }
 
 header {
@@ -102,6 +106,17 @@ header {
 
 nav {
   height: 10%;
+}
+
+footer {
+  width: 100%;
+  max-width: 1280px;
+  background-position: center;
+  background-size: cover;
+  height: 5vh;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 section {
@@ -117,7 +132,6 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #444444;
-
   }
   li {
     float: left;
@@ -126,10 +140,8 @@ ul {
   
   li a {
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
   }
   
   li a:hover:not(.active) {
@@ -141,25 +153,12 @@ ul {
   }
 
 
-  .welcome, .skills, .about {
+  .FirstSection, .SecondSection  {
     position: relative;
     width: 100%;
     min-height: 50%;
     max-height: 50%;
     height: 50%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .socials {
-    background-color: var(--SectionCBackground);
-    display: grid;
-    position: relative;
-    width: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -195,35 +194,32 @@ ul {
     font-weight: bold;
   }
 
-.about {
+.SecondSection {
   background-color: var(--SectionABackground);
 }
 
-.skills {
-  background-color: var(--SectionBBackground);
+.SecondSection h2 {
+  background-color: #00000055;
+  border-radius: 10px;
+  max-width: 65%;
+  margin: auto;
+  margin-bottom: 1%;
 }
-.skills h2 {
-  padding-bottom: 0;
-}
-.skills div {
-  padding: 0;
-}
-.skills ul {
+
+.GridSection {
+  background-color: var(--SectionCBackground);
+  display: grid;
   position: relative;
-  list-style-type: disc;
-  margin: 0;
-  padding: 1%;
+  width: 100%;
   overflow: hidden;
-  background: none;
-}
-.skills ul li {
-  float: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 
-
-
-.platform-grid {
+.grid-container {
   width: 100%;
   max-width: 1280px;
   box-sizing: border-box;
@@ -237,7 +233,7 @@ ul {
  
 }
 
-.GitHub, .Twitch, .YouTube {
+.GridItem {
   position: relative;
   height: 35vh;
   overflow: hidden;
@@ -248,27 +244,70 @@ ul {
   background-repeat: no-repeat;
 }
 
+/* Boring Background Shit */
 
-.GitHub {
-  background-image: url("../assets/images/platforms/GitHub.png");
+#about {
+  /* TODO - Replace this Image */
+  background-image: url("/assets/images/grid/laptop-coding.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-.Twitch {
-  background-image: url("../assets/images/platforms/Twitch.png");
+
+#AboutGridItem {
+  background-image: url("/assets/images/grid/question-mark.png");
 }
-.YouTube {
-  background-image: url("../assets/images/platforms/YouTube.png");
+#ProjectsGridItem {
+  background-image: url("/assets/images/grid/radio-tuner.png");
+}
+#ContactGridItem {
+  background-image: url("/assets/images/grid/mail.png");
+}
+
+
+#GitHub {
+  background-image: url("/assets/images/platforms/GitHub.png");
+}
+#Twitch {
+  background-image: url("/assets/images/platforms/Twitch.png");
+}
+#YouTube {
+  background-image: url("/assets/images/platforms/YouTube.png");
+}
+
+#Coding {
+  background-image: url("/assets/images/grid/network-switch.png");
+}
+#MultiMedia {
+  background-image: url("/assets/images/grid/projector.png");
+}
+#Certs {
+  background-image: url("/assets/images/grid/bookshelf.png");
 }
 
 @media only screen and (max-width: 500px) {
   :root {
     --fontSizeH1: 2.5rem;
     --fontSizeH2: 1.5rem;
-    --fontSizeH3: 1.5;
+    --fontSizeH3: 1.0rem;
+    --fontSizeH4: 0.5rem;
     --fontSizeP: medium;
   }
   
-  .platform-grid {
+  .grid-container {
     display: grid;
     grid-template-columns: 1fr;
   }
+
+  ul {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+
+  
+
 }

@@ -24,23 +24,23 @@
 </head>
 <body>
     <header>
+      <!-- Site Logo -->
         <div>
             <img class="logo" src="assets/images/typical-nerds-cyan.png" alt="">
         </div>
-
-        </nav>
+        <!-- Nav Bar -->
+        <nav>
             <ul>
                 <li class="active"><a href="/">Home</a></li>
                 <li><a href="#socials">Socials</a></li>
-                <li><a href="/radio/">Open Android Radio</a></li>
-                <!-- <li><a href="404.html">Contact</a></li>
-                <li><a>|</a></li> -->
-                <li></li>
+                <li><a href="/projects/radio/">Radio</a></li>
+                <li><a href="/about/">About Me</a></li>
+                <li><a href="mailto:contact@typicalnerds.uk">Contact</a></li>
             </ul> 
         </nav>
     </header>
-    </div>
-    <section class="welcome" id="welcome">
+
+    <section class="FirstSection" id="welcome">
         <div class="video-background">
             <video autoplay muted loop id="bg-video" poster="assets/videos/welcome/welcome-thumb.png">
                 <source src="/assets/videos/welcome/welcome.webm" type="video/webm">
@@ -50,73 +50,63 @@
         </div>
         <div class="content">
             <h2>
-                Hello My Name Is:<br>
-                A Typical Nerd
+                Typical Nerds<br>
+                Exploration Station
             </h2>
         </div>
         
     </section>
-    <section class="about" id="about">
-        <div class="video-background">
-            <video autoplay muted loop id="bg-video" poster="assets/videos/about/about-thumb.png">
-                <source src="/assets/videos/about/about.webm" type="video/webm">
-                <source src="/assets/videos/about/about.mp4" type="video/mp4">
-                <img src="assets/videos/about/about-thumb.png"></img>
-            </video>
+    <section class="GridSection" id="HomeLinks">
+        <!-- <h2>Explore Here</h2> -->
+        <div class="grid-container">
+          <!-- About Me Hyperlink -->
+          <div class="GridItem" id="AboutGridItem">
+              <a href="/about/">
+                <h2>About Me</h2>
+              </a>
+          </div>
+          <!-- Projects Hyperlink -->
+          <div class="GridItem" id="ProjectsGridItem">
+            <!-- Open Android Radio Placeholder -->
+              <a href="/projects/radio/">
+                <h2>Open Android Radio</h2>
+            </a>
+          </div>
+          <!-- Contact Grid -->
+          <div class="GridItem" id="ContactGridItem">
+              <a href="mailto:contact@typicalnerds.uk">
+                <h2>Contact</h2>
+              </a>
+          </div>
         </div>
-        <div class="content">
-            <h2>About Me</h2>
-            <p>
-                I'm just some Nerd up in Newcastle who finds developing Mobile Apps, DJing & Networking quite enjoyable.<br>
-                It's sometimes a pain in the ass, but thats part of the fun.
-            </p>
-        </div>
-    </section>
-    <!-- <section class="skills">
-        <h2>Skills & Certifications</h2>
-        <div class="Coding">
-            <h3>Python</h3>
+      </section>
 
-        </div>
-        <div class="MobileDev">
-
-        </div>
-        <div class="WebDev">
-
-        </div>
-
-        <div class="certs">
-            <h2>Certifications</h2>
-            <ul>
-                <li>
-                    Level 3 Diploma in Information Technology
-                </li>
-            </ul>
-        </div>
-    </section> -->
-    <section class="socials" id="socials">
-        <h2>Find me on Social Media:</h2>
-        <div class="platform-grid">
+    <section class="GridSection" id="socials">
+        <div class="grid-container">
           <!-- Platform 1 -->
-          <div class="Twitch">
-              <a class="social-link" href="https://www.twitch.tv/electronicautism">
+          <div class="GridItem" id="Twitch">
+              <a href="https://www.twitch.tv/electronicautism">
                 <h2>Twitch</h2>
               </a>
           </div>
           <!-- Platform 2 -->
-          <div class="YouTube">
-              <a class="social-link" href="https://www.youtube.com/@TypicalNerds">
+          <div class="GridItem" id="YouTube">
+              <a href="https://www.youtube.com/@TypicalNerds">
                 <h2>YouTube</h2>
             </a>
           </div>
           <!-- Platform 3 -->
-          <div class="GitHub">
-              <a class="social-link" href="https://github.com/TypicalNerds/">
+          <div class="GridItem" id="GitHub">
+              <a href="https://github.com/TypicalNerds/">
                 <h2>GitHub</h2>
               </a>
           </div>
         </div>
       </section>
-      
-</body>
+    <!-- Bottom Bar -->
+    <footer id="footer">
+      <h4>© Typical Nerds 2025</h4>
+      <h4>Some Assets Sourced from <a href="https://www.pexels.com/">Pexels</a></h4>
+    </footer>
+  </body>
 </html>
