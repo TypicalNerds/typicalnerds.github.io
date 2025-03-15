@@ -284,6 +284,15 @@ ul {
 #Certs {
   background-image: url("/assets/images/grid/bookshelf.png");
 }
+#MetroDev {
+  background-image: url("/assets/images/platforms/GitHub.png");
+}
+#MetroFeatures {
+  background-image: url("/assets/images/platforms/Twitch.png");
+}
+#MetroLink {
+  background-image: url("/assets/images/platforms/YouTube.png");
+}
 
 @media only screen and (max-width: 500px) {
   :root {
