@@ -1,54 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Typical Nerds</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #111111;
-            background-image: radial-gradient(#222222, #111111);
-            background-repeat: no-repeat;
-            background-size: cover;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: auto;
-        }
-        h1 {
-            font-size: 2rem;
-            color: #ffffff;
-            margin: auto;
-        }
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/styles.css">
 
-        a {
-            background-color: #222;
-            border: turquoise;
-            border-width: 20;
-            margin: auto;
-            text-decoration: none;
-        }
-    </style>
+    <!-- Favicon Stuff -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Metadata For Website Embeds -->
+    <meta content="Typical Nerds" property="og:title" />
+    <meta content="Some site about a Nerd in Newcastle making Websites, Mobile Apps and DJing for fun." property="og:description" />
+    <meta content="https://typicalnerds.uk" property="og:url" />
+    <meta content="https://typicalnerds.uk/assets/images/embed.png" property="og:image" />
+    <meta content="#00A6FF" data-react-helmet="true" name="theme-color" />
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>Typical Nerds</title>
 </head>
 <body>
-        <h1>
-            You Seem to Have Gotten Lost.<br>
-            Don't worry, you can either choose to visit:
-            <a href="/projects/radio/">
-                <h1 style="color: #0011ff;">Open Android Radio<br></h1>
-            </a>
-            <a href="/projects/metro/">
-                <h1 style="color: #00FFff;">Metro Tracker<br></h1>
-            </a>
-            <a href="/">
-                <h1 style="color: #00a6ff;"> or Go Back to Safety</h1>
-            </a>
-        </h1>
+    <header>
+      <!-- Site Logo -->
+        <div>
+            <img class="logo" src="/assets/images/typical-nerds-cyan.png" alt="">
+        </div>
+        <!-- Nav Bar -->
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#socials">Socials</a></li>
+                <li class="active"><a href="/projects/">Projects</a></li>
+                <li><a href="/about/">About Me</a></li>
+                <li><a href="mailto:contact@typicalnerds.uk">Contact</a></li>
+            </ul> 
+        </nav>
+    </header>
 
+    <section class="FirstSection" id="welcome">
+        <div class="video-background">
+            <video autoplay muted loop id="bg-video" poster="assets/videos/welcome/welcome-thumb.png">
+                <source src="/assets/videos/welcome/welcome.webm" type="video/webm">
+                <source src="/assets/videos/welcome/welcome.mp4" type="video/mp4">
+                <img src="/assets/videos/welcome/welcome-thumb.png"></img>
+            </video>
+        </div>
+        <div class="content">
+            <h2>
+                Here's Just a Couple of the Things I'm Working On<br>
+            </h2>
+        </div>
         
-</body>
+    </section>
+    <section class="GridSection">
+        <!-- <h2>Explore Here</h2> -->
+        <div class="grid-container grid-projects">
+          <!-- About Me Hyperlink -->
+          <div class="GridItem" id="MetroLink">
+              <a href="/projects/metro/">
+                <h2 id="link-bg">Metro Tracker Project</h2>
+              </a>
+          </div>
+          <!-- Projects Hyperlink -->
+          <div class="GridItem" id="RadioLink">
+            <!-- Open Android Radio Placeholder -->
+              <a href="/projects/radio/">
+                <h2 id="link-bg">Open Android Radio</h2>
+            </a>
+          </div>
+        </div>
+      </section>
+    <!-- Bottom Bar -->
+    <footer id="footer">
+      <h4>© Typical Nerds 2025</h4>
+      <h4>Some Assets Sourced from <a href="https://www.pexels.com/">Pexels</a></h4>
+    </footer>
+  </body>
 </html>

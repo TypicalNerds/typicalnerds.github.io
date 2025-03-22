@@ -223,14 +223,15 @@ ul {
   width: 100%;
   max-width: 1280px;
   box-sizing: border-box;
-
   margin: 0 auto;
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: space-evenly;
   gap: 0px;
- 
+}
+
+.grid-projects {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .GridItem {
@@ -242,6 +243,18 @@ ul {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.GridItem a h2 {
+  background-color: #00000055;
+  max-width: 65%;
+  border-radius: 10px;
+}
+
+#content-bg {
+  background-color: #00000055;
+  border-radius: 10px;
+  max-width: 70%;
 }
 
 /* Boring Background Shit */
@@ -284,14 +297,19 @@ ul {
 #Certs {
   background-image: url("/assets/images/grid/bookshelf.png");
 }
+
+#MetroLink {
+  background-image: url("/assets/images/grid/new-metro-dual.png");
+}
+#RadioLink {
+  background-image: url("/assets/images/grid/radio-tuner.png");
+}
+
 #MetroDev {
   background-image: url("/assets/images/platforms/GitHub.png");
 }
 #MetroFeatures {
   background-image: url("/assets/images/platforms/Twitch.png");
-}
-#MetroLink {
-  background-image: url("/assets/images/platforms/YouTube.png");
 }
 
 @media only screen and (max-width: 500px) {
