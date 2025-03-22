@@ -260,7 +260,6 @@ ul {
 /* Boring Background Shit */
 
 #about {
-  /* TODO - Replace this Image */
   background-image: url("/assets/images/grid/laptop-coding.png");
   background-repeat: no-repeat;
   background-size: cover;
