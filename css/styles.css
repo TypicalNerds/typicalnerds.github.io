@@ -1,3 +1,9 @@
+body {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
 :root {
   --GradientA: linear-gradient(to top, black, #232323);
   --BrightText: #ffffff;
