@@ -1,9 +1,3 @@
-body {
-  -moz-transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-}
-
 :root {
   --GradientA: linear-gradient(to top, black, #232323);
   --BrightText: #ffffff;
@@ -304,7 +298,7 @@ ul {
 }
 
 #MetroLink {
-  background-image: url("/assets/images/platforms/YouTube.png");
+  background-image: url("/assets/images/grid/new-metro-dual.png");
 }
 #RadioLink {
   background-image: url("/assets/images/grid/radio-tuner.png");
@@ -315,6 +309,9 @@ ul {
 }
 #MetroFeatures {
   background-image: url("/assets/images/platforms/Twitch.png");
+}
+#MetroDownload {
+  background-image: url("/assets/images/platforms/YouTube.png");
 }
 
 @media only screen and (max-width: 500px) {
