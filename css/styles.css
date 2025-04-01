@@ -251,7 +251,13 @@ ul {
   border-radius: 10px;
 }
 
-#content-bg {
+.GridItem h3 {
+  background-color: #00000055;
+  max-width: 65%;
+  border-radius: 10px;
+}
+
+.content-bg {
   background-color: #00000055;
   border-radius: 10px;
   max-width: 70%;
@@ -313,6 +319,8 @@ ul {
 #MetroDownload {
   background-image: url("/assets/images/platforms/YouTube.png");
 }
+
+/* Media Queries to make it look better on a phone */
 
 @media only screen and (max-width: 500px) {
   :root {
