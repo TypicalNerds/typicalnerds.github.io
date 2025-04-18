@@ -267,56 +267,61 @@ ul {
 
 #about {
   background-image: url("/assets/images/grid/laptop-coding.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
-#AboutGridItem {
+.AboutGrid {
   background-image: url("/assets/images/grid/question-mark.png");
 }
-#ProjectsGridItem {
+.ProjectsGrid {
   background-image: url("/assets/images/grid/radio-tuner.png");
 }
-#ContactGridItem {
+.ContactGrid {
   background-image: url("/assets/images/grid/mail.png");
 }
 
-
-#GitHub {
+.GitHubGrid {
   background-image: url("/assets/images/platforms/GitHub.png");
 }
-#Twitch {
+.TwitchGrid {
   background-image: url("/assets/images/platforms/Twitch.png");
 }
-#YouTube {
+.YouTubeGrid {
   background-image: url("/assets/images/platforms/YouTube.png");
 }
 
-#Coding {
+.CodingGrid {
   background-image: url("/assets/images/grid/network-switch.png");
 }
-#MultiMedia {
+.MultiMediaGrid {
   background-image: url("/assets/images/grid/projector.png");
 }
-#Certs {
+.CertsGrid {
   background-image: url("/assets/images/grid/bookshelf.png");
 }
 
-#MetroLink {
+.MetroGrid {
   background-image: url("/assets/images/grid/new-metro-dual.png");
 }
-#RadioLink {
+.RadioGrid {
   background-image: url("/assets/images/grid/radio-tuner.png");
 }
+.DJGrid {
+  background-image: url("/assets/images/grid/disco-ball.jpg");
+}
+.PlaceholderGrid {
+  background-image: url("/assets/images/grid/question-mark.png");
+}
 
-#MetroDev {
+.SoloMetro {
+  background-image: url("/assets/images/metro/solo-metro.jpg");
+}
+.MetroDev {
   background-image: url("/assets/images/platforms/GitHub.png");
 }
-#MetroFeatures {
+.MetroFeatures {
   background-image: url("/assets/images/platforms/Twitch.png");
 }
-#MetroDownload {
+.MetroDownload {
   background-image: url("/assets/images/platforms/YouTube.png");
 }
 
