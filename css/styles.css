@@ -315,13 +315,14 @@ ul {
 .SoloMetro {
   background-image: url("/assets/images/metro/solo-metro.jpg");
 }
-.MetroDev {
+
+.AppDev {
   background-image: url("/assets/images/platforms/GitHub.png");
 }
-.MetroFeatures {
+.AppFeatures {
   background-image: url("/assets/images/platforms/Twitch.png");
 }
-.MetroDownload {
+.AppDownload {
   background-image: url("/assets/images/platforms/YouTube.png");
 }
 
