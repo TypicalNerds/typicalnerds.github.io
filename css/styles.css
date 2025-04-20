@@ -263,6 +263,15 @@ ul {
   max-width: 70%;
 }
 
+.StoreBadge-Container {
+  flex: auto auto;
+  flex-direction: row;
+}
+
+.StoreBadge img {
+  max-width: 30%;
+}
+
 /* Boring Background Shit */
 
 #about {
