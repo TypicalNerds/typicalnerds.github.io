@@ -321,13 +321,13 @@ ul {
 }
 
 .AppDev {
-  background-image: url("/assets/images/platforms/GitHub.png");
+  background-image: url("/assets/images/platforms/YouTube.png");
 }
 .AppFeatures {
   background-image: url("/assets/images/platforms/Twitch.png");
 }
 .AppDownload {
-  background-image: url("/assets/images/platforms/YouTube.png");
+  background-image: url("/assets/images/platforms/GitHub.png");
 }
 
 /* Media Queries to make it look better on a phone */
