@@ -153,7 +153,7 @@ ul {
   }
 
 
-  .FirstSection, .SecondSection  {
+  .FirstSection, .SecondSection, .ContactSection {
     position: relative;
     width: 100%;
     min-height: 50%;
@@ -204,6 +204,29 @@ ul {
   max-width: 65%;
   margin: auto;
   margin-bottom: 1%;
+}
+
+.ContactSection {
+  /* background-color: var(--SectionABackground); */
+  background-image: url("/assets/videos/newcastle/newcastle-thumb.png");
+  background-size: cover;
+}
+
+.ContactSection h2 {
+  background-color: #00000055;
+  border-radius: 10px;
+  max-width: 90%;
+  margin: auto;
+  margin-bottom: 1%;
+}
+
+.contact-content {
+  position: relative;
+z-index: 10; /* Ensures text stays above the video */
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .GridSection {
