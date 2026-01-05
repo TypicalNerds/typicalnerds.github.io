@@ -280,6 +280,12 @@ z-index: 10; /* Ensures text stays above the video */
   border-radius: 10px;
 }
 
+.GridItem h4 {
+  background-color: #00000055;
+  max-width: 65%;
+  border-radius: 10px;
+}
+
 .content-bg {
   background-color: #00000055;
   border-radius: 10px;
